@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnProjectComplete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/pad_1dp"
+        android:background="@drawable/item_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="C"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvWBS"
+        android:layout_width="70sp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvSchedStartDate"
+        android:layout_width="90sp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvSchedEndDate"
+        android:layout_width="90sp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvDays"
+        android:layout_width="50sp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvDep"
+        android:layout_width="50sp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvActualStartDate"
+        android:layout_width="90sp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvActualEndDate"
+        android:layout_width="90sp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnCalendarSync"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/pad_1dp"
+        android:background="@drawable/item_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="SYNC"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>
