@@ -1,4 +1,4 @@
-package com.example.gsheet;
+package com.brucekhin.gsheet;
 
 import junit.framework.TestCase;
 
