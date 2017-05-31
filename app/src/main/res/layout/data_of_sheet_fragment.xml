@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.brucekhin.gsheet.DataOfSheetFragment">
+    tools:context="com.brucekhin.homebuilder.DataOfSheetFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,6 +83,7 @@
             android:paddingRight="5dp"
             android:textAlignment="center"
             android:textColor="@android:color/white"
+            android:text="# Days"
             android:textStyle="bold" />
 
         <TextView
@@ -93,6 +94,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textAlignment="center"
+            android:text="Dep"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
@@ -104,6 +106,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textAlignment="center"
+            android:text="Actual Start Date"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
@@ -115,6 +118,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textAlignment="center"
+            android:text="Actual End Date"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
@@ -127,6 +131,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textAlignment="center"
+            android:text="Note"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
         <Button
