@@ -96,7 +96,9 @@ public class DataOfSheetFragment extends ProgressFragment{
     }
 
     private void readFromFirebase() {
+
         showProgressDialog("Loading sheet data...");
+
         DatabaseReference mPostTabReference = FirebaseDatabase.getInstance().getReference();
         mPostTabReference = mPostTabReference.child(Consts.bookName).child(Consts.sheetData).child(mySheetName);
         mPostTabReference.addValueEventListener(new ValueEventListener() {
@@ -155,7 +157,7 @@ public class DataOfSheetFragment extends ProgressFragment{
                         headerTvNotes.setText(rowData.Notes);
                     } else {
                         sheetDatas.add(rowData);
-                        ProjectListAdapter adapter = new ProjectListAdapter(mContext, sheetDatas, (SheetLayout) getActivity(), (SheetLayout) getActivity());
+                        ProjectListAdapter adapter = new ProjectListAdapter(mContext, sheetDatas, (SheetLayout1) getActivity(), (SheetLayout1) getActivity());
                         lstProjects.setAdapter(adapter);
                         lstProjects.setSelection(mnCurPos);
                         lstProjects.setOnScrollListener(new AbsListView.OnScrollListener() {
