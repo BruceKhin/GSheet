@@ -104,7 +104,7 @@ public class DataOfSheetFragment extends ProgressFragment{
         mPostTabReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                hideProgressDialog();
+
                 sheetDatas = new ArrayList<>();
                 int j = 0;
                 for (DataSnapshot sheet : dataSnapshot.getChildren()) {
@@ -174,6 +174,8 @@ public class DataOfSheetFragment extends ProgressFragment{
 
                     j++;
                 }
+
+                hideProgressDialog();
             }
 
             @Override

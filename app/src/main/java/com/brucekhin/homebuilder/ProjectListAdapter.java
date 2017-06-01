@@ -22,8 +22,6 @@ class ProjectListAdapter extends BaseAdapter {
     private ArrayList<SheetData> datas = new ArrayList<>();
     private static LayoutInflater inflater=null;
 
-    private ProgressDialog mProgress;
-
     public interface SetCompleteListener{
         void setCompleteProject(int id, String state);
     }
@@ -43,9 +41,6 @@ class ProjectListAdapter extends BaseAdapter {
                 getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.completeListener = completeListener;
         this.syncListener = syncListener;
-
-        mProgress = new ProgressDialog(this.context);
-        mProgress.setMessage("Calling Google Sheets API ...");
     }
     @Override
     public int getCount() {
@@ -120,20 +115,6 @@ class ProjectListAdapter extends BaseAdapter {
             holder.btnProjectComplete.setVisibility(View.INVISIBLE);
             holder.btnCalendarSync.setVisibility(View.INVISIBLE);
         }
-//        if(position == 0){
-//            holder.tvWBS.setTypeface(holder.tvWBS.getTypeface(), Typeface.BOLD);
-//            holder.tvActivity.setTypeface(holder.tvActivity.getTypeface(), Typeface.BOLD);
-//
-//            holder.tvSchedStartDate.setTypeface(holder.tvSchedStartDate.getTypeface(), Typeface.BOLD);
-//            holder.tvSchedEndDate.setTypeface(holder.tvSchedEndDate.getTypeface(), Typeface.BOLD);
-//
-//            holder.tvDays.setTypeface(holder.tvDays.getTypeface(), Typeface.BOLD);
-//            holder.tvDep.setTypeface(holder.tvDep.getTypeface(), Typeface.BOLD);
-//            holder.tvActualStartDate.setTypeface(holder.tvActualStartDate.getTypeface(), Typeface.BOLD);
-//            holder.tvActualEndDate.setTypeface(holder.tvActualEndDate.getTypeface(), Typeface.BOLD);
-//            holder.tvNotes.setTypeface(holder.tvNotes.getTypeface(), Typeface.BOLD);
-//        }
-
         if(datas.get(position).C.equals("x")) {
             holder.btnProjectComplete.setText("C");
             holder.btnProjectComplete.setBackground(context.getResources().getDrawable(R.drawable.item_bg));
